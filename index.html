@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>My Calculator</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <input type="text" id="display" readonly />
+        <div id="keys">
+          <button onclick="AppendToDisplay('+')" class="operator-btn">+</button>
+
+          <button onclick="AppendToDisplay('7')">7</button>
+
+          <button onclick="AppendToDisplay('8')">8</button>
+
+          <button onclick="AppendToDisplay('9')">9</button>
+
+          <button onclick="AppendToDisplay('-')" class="operator-btn">-</button>
+
+          <button onclick="AppendToDisplay('4')">4</button>
+
+          <button onclick="AppendToDisplay('5')">5</button>
+
+          <button onclick="AppendToDisplay('6')">6</button>
+
+          <button onclick="AppendToDisplay('*')" class="operator-btn">*</button>
+
+          <button onclick="AppendToDisplay('1')">1</button>
+
+          <button onclick="AppendToDisplay('2')">2</button>
+
+          <button onclick="AppendToDisplay('3')">3</button>
+
+          <button onclick="AppendToDisplay('/')" class="operator-btn">/</button>
+
+          <button onclick="AppendToDisplay('0')">0</button>
+
+          <button onclick="AppendToDisplay('.')">.</button>
+
+          <button onclick="calculate()">=</button>
+          <button onclick="ClearDisplay()" class="operator-btn">C</button>
+          <button
+            class="fa-solid fa-delete-left"
+            onclick="deleteLast()"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
